@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/silver.theme.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".photo").owlCarousel({
+          loop: true,
+          animateOut: "fadeOut",
+          animateIn: "fadeIn",
+          autoplayTimeout: 4000,
+          items: 1,
+          margin: 0,
+          dots: false,
+          nav: false,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+
+        $(".story").owlCarousel({
+          animateOut: "slideOutLeft",
+          animateIn: "slideInRight",
+          items: 1,
+          margin: 0,
+          nav: false,
+        });
+
+        const deadline = new Date(
+          Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000
+        );
+        initializeClock("clockdiv", deadline);
+
+        $(".btn-invitation").click(function () {
+          $("#landing").addClass("move-gate");
+        });
+      });
+    </script>
+    <title>SILVER</title>
+  </head>
+  <body>
+    <div id="landing">
+      <div id="landing-title">
+        <div class="main-title">You're Invited</div>
+        <div class="sub-title">The Wedding Celebration of</div>
+        <div class="bride-title">Ashry & Aditya</div>
+      </div>
+      <button class="btn-invitation">♥ Open Invitation</button>
+    </div>
+    <div class="container">
+      <!-- Slider -->
+      <div class="banner">
+        <div class="title">
+          <h4>Ashry & Aditya</h4>
+          <p>ARE GETTING MARRIED!</p>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <div class="row bg-red">
+        <div class="box-quote">
+          <h1>
+            "Bukan karena kurangnya <strong>cinta</strong>, tapi kurangnya
+            <strong>persahabatan</strong> <br />
+            yang membuat pernikahan tidak <strong>bahagia.</strong>"
+          </h1>
+          <h2>–Friedrich Nietzsche</h2>
+        </div>
+      </div>
+
+      <!-- Detail Mempelai -->
+      <div class="row bg-white">
+        <div class="box-lg center text-green">
+          <div class="content-box">
+            <p>
+              Maha suci Allah yang telah menciptakan mahluk-Nya
+              berpasang-pasangan.<br />
+              Ya Allah, perkenankanlah kami merangkaikan kasih sayang yang Kau
+              ciptakan diantara putra-putri kami
+            </p>
+          </div>
+          <div class="content-box">
+            <h1 class="decorate-font text-red">Ashry Ainun</h1>
+            <p class="sub-text">
+              Putri pertama dari<br />Bapak M. Didie Askhari & Ibu Rubiah
+              Tasning (alm)
+            </p>
+            <div class="space">&nbsp;</div>
+            <h1 class="decorate-font text-red" style="font-size: 5em">&</h1>
+            <div class="space">&nbsp;</div>
+            <h1 class="decorate-font text-red">Restu Aditya</h1>
+            <p class="sub-text">
+              Putra pertama dari<br />
+              Bapak Muh Gaffar Leo & Ibu Magdalena Sumbung
+            </p>
+          </div>
+          <p>
+            Untuk melaksanakan syariat agama-Mu, mengikuti sunnah rasul-Mu.<br />
+
+            Dalam membentuk rumah tangga Sakinah, Mawaddah Wa Rahmah dalam
+            ikatan pernikahan.
+          </p>
+        </div>
+      </div>
+
+      <div class="row bg-white center countdown">
+        <h2 class="title-countdown">Just</h2>
+        <div id="clockdiv">
+          <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+        <h2 class="title-countdown">Until We Get Married!</h2>
+      </div>
+
+      <div class="row bg-white">
+        <div class="box-lg">
+          <div class="event">
+            <div class="col">
+              <h4>Akad Nikah</h4>
+              <p class="time">10:00 - 10:30</p>
+              <p class="date">Sabtu, 20 Desember 2020</p>
+              <p class="address">
+                <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
+                Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
+              </p>
+              <a href="http://" target="_blank">Petunjuk Arah</a>
+            </div>
+            <div class="col">&nbsp;</div>
+            <div class="col">
+              <h4>Resepsi</h4>
+              <p class="time">11:00 - 16:00</p>
+              <p class="date">Sabtu, 20 Desember 2020</p>
+              <p class="address">
+                <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
+                Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
+              </p>
+              <a href="http://" target="_blank">Petunjuk Arah</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="photo owl-carousel owl-theme owl-loaded">
+        <div class="owl-stage-outer">
+          <div class="owl-stage">
+            <div class="owl-item">
+              <img src="img/Cynthia-Sendy-12.jpg" alt="" srcset="" />
+            </div>
+            <div class="owl-item">
+              <img src="img/Cynthia-Sendy-13.jpg" alt="" srcset="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Story-->
+      <div class="row bg-white">
+        <div class="box-lg center slider-story">
+          <h2>Our Stories</h2>
+          <div class="story owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <h4>2016</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo omnis ea a ullam. Vitae dicta ea laborum sapiente qui,
+                    necessitatibus a facilis laudantium veniam cupiditate sit
+                    ipsum porro aliquid nesciunt.
+                  </p>
+                </div>
+                <div class="owl-item">
+                  <h4>2017</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo omnis ea a ullam. Vitae dicta ea laborum sapiente qui,
+                    necessitatibus a facilis laudantium veniam cupiditate sit
+                    ipsum porro aliquid nesciunt.
+                  </p>
+                </div>
+                <div class="owl-item">
+                  <h4>2018</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo omnis ea a ullam. Vitae dicta ea laborum sapiente qui,
+                    necessitatibus a facilis laudantium veniam cupiditate sit
+                    ipsum porro aliquid nesciunt.
+                  </p>
+                </div>
+                <div class="owl-item">
+                  <h4>2019</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo omnis ea a ullam. Vitae dicta ea laborum sapiente qui,
+                    necessitatibus a facilis laudantium veniam cupiditate sit
+                    ipsum porro aliquid nesciunt.
+                  </p>
+                </div>
+                <div class="owl-item">
+                  <h4>2020</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Illo omnis ea a ullam. Vitae dicta ea laborum sapiente qui,
+                    necessitatibus a facilis laudantium veniam cupiditate sit
+                    ipsum porro aliquid nesciunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-red center">
+        <div class="box-lg">
+          <form action="" id="form-wishes">
+            <h4>Send Wishes</h4>
+            <input type="text" name="name" placeholder="Name" id="name" />
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              id="address"
+            />
+            <div class="clearfix"></div>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <input type="submit" value="Send" />
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row bg-white center footer">
+        <p class="text">Made with ♥ by</p>
+        <a href="">
+          <img src="css/nganten-story.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

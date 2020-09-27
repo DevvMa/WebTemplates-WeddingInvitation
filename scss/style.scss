@@ -1,0 +1,355 @@
+$color-base: #ffd3b6 !default;
+$color-white: #fcf8f3 !default;
+$color-green: #698474 !default;
+$color-red: #ffaaa5 !default;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.text-base {
+  color: $color-base;
+}
+.bg-base {
+  background-color: $color-base;
+}
+.text-white {
+  color: $color-white;
+}
+.bg-white {
+  background-color: $color-white;
+}
+.text-green {
+  color: $color-green;
+}
+.bg-green {
+  background-color: $color-green;
+}
+.text-red {
+  color: $color-red;
+}
+.bg-red {
+  background-color: $color-red;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.row {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.box-lg {
+  width: 80%;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.decorate-font {
+  font-family: "Great Vibes", cursive;
+  font-size: 3em;
+  margin: 0;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.content-box {
+  margin-bottom: 4%;
+}
+
+.sub-text {
+  margin-top: 0;
+}
+
+.space {
+  margin: 1% 0;
+}
+
+.divider {
+  width: 100%;
+}
+
+.box-quote {
+  margin: auto;
+  width: 70%;
+  font-family: "lato";
+}
+
+.box-quote {
+  h1 {
+    font-family: "Playfair Display", serif;
+    color: $color-white;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+  }
+  h2 {
+    color: $color-white;
+    font-size: 1.2em;
+    text-align: right;
+    font-weight: 300;
+  }
+}
+
+#clockdiv {
+  display: inline-block;
+  text-align: center;
+  font-size: 4em;
+}
+
+#clockdiv {
+  > div {
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+#clockdiv {
+  div {
+    > span {
+      padding: 15px;
+      display: inline-block;
+    }
+  }
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.title-countdown {
+  padding-top: 35px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.countdown {
+  background: url("timer_bg1.png") repeat-y center center;
+}
+
+.event {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.col {
+  text-align: center;
+}
+
+.col {
+  h4 {
+    letter-spacing: 0.1em;
+    font-size: 1.6em;
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+  }
+
+  .time {
+    font-size: 1.4em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+  }
+
+  .date {
+    font-size: 1em;
+    margin-block-start: 0;
+    margin-block-end: 2em;
+  }
+
+  a {
+    padding: 5px 30px;
+    background-color: $color-red;
+    color: $color-white;
+    text-decoration: none;
+  }
+}
+
+.col:nth-child(2) {
+  background: url("flower.svg") no-repeat center center;
+}
+
+.footer {
+  padding-block-end: 0;
+  .text {
+    font-family: "Montserrat", sans-serif;
+    margin-block-end: 0.5em;
+  }
+  img {
+    width: 24%;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  background-blend-mode: multiply;
+  background-image: url("../img/Cynthia-Sendy-12.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.32);
+  position: relative;
+  .title {
+    position: absolute;
+    width: 30%;
+    background-color: rgba($color-red, 0.7);
+    border-radius: 8px;
+    color: $color-white;
+    padding: 20px;
+    text-align: center;
+    left: 50%;
+    margin-left: -15%;
+    margin-top: 35%;
+    h4 {
+      font-size: 3.5em;
+      font-family: "Great Vibes", cursive;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      letter-spacing: 0.1em;
+    }
+    P {
+      font-weight: 300;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+#form-wishes {
+  h4 {
+    font-family: "Great Vibes", cursive;
+    font-size: 2.3em;
+    color: $color-white;
+    letter-spacing: 0.2em;
+    word-spacing: 0.5em;
+    margin-block-end: 2%;
+  }
+
+  input[type="text"] {
+    font-family: "Lato", sans-serif;
+    width: 42.2%;
+    border-radius: 8px;
+    padding: 20px;
+    float: left;
+    border: none;
+    outline: none;
+    margin: 2%;
+  }
+
+  textarea {
+    font-family: "Lato", sans-serif;
+    clear: left;
+    border-radius: 8px;
+    padding: 20px;
+    width: 92.2%;
+    margin: 0 2% 2% 2%;
+    border: none;
+    outline: none;
+  }
+
+  input[type="submit"] {
+    padding: 10px 30px;
+    background-color: #000000;
+    color: $color-white;
+    text-decoration: none;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    float: right;
+    margin-right: 2%;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+}
+
+.slider-story {
+  h2 {
+    font-size: 2.3em;
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    margin-block-end: 2%;
+  }
+  p {
+    padding: 0px 60px;
+  }
+}
+
+#landing {
+  background-image: url("../img/Cynthia-Sendy-7.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  z-index: 11;
+  position: relative;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40vh;
+  padding-bottom: 18vh;
+}
+
+#landing-title {
+  color: $color-white;
+  text-align: center;
+
+  .main-title {
+    font-size: 1.5em;
+    padding-bottom: 0.6em;
+  }
+
+  .sub-title {
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+  }
+
+  .bride-title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+  }
+}
+
+.btn-invitation {
+  outline: none;
+  border: none;
+  width: 60%;
+  margin: 1.5em auto;
+  padding: 0.4em;
+  font-size: 1.3em;
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.move-gate {
+  top: -170vh !important;
+  transition: all 1s;
+}
