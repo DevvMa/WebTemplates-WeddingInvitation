@@ -5,6 +5,7 @@ $color-red: #ffaaa5 !default;
 
 body {
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 .text-base {
   color: $color-base;
@@ -350,6 +351,46 @@ p {
 .move-gate {
   top: -170vh !important;
   transition: all 1s;
+}
+
+#sticky-navbar {
+  width: 100%;
+  position: fixed;
+  bottom: -50px;
+  transition: bottom 0.3s;
+  background-color: $color-red;
+  border-top: solid 2px $color-base;
+  z-index: 10;
+  ul {
+    text-align: center;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      list-style-type: none;
+      a {
+        color: white;
+        font-weight: 400;
+        width: 100%;
+        padding: 1em 4em;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-red;
+          background-color: $color-white;
+        }
+
+        &:active {
+          color: $color-red;
+          background-color: $color-white;
+        }
+
+        i {
+          width: 2em;
+          height: 2em;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 980px) {

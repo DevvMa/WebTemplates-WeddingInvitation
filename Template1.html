@@ -28,6 +28,10 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/18633758b4.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/countdown.js"></script>
     <script>
@@ -71,6 +75,37 @@
         $(".btn-invitation").click(function () {
           $("#landing").addClass("move-gate");
         });
+
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 60 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            document.getElementById("sticky-navbar").style.bottom = "0";
+          } else {
+            document.getElementById("sticky-navbar").style.bottom = "-50px";
+          }
+        }
+
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
       });
     </script>
     <title>SILVER</title>
@@ -86,7 +121,7 @@
     </div>
     <div class="container">
       <!-- Slider -->
-      <div class="banner">
+      <div class="banner" id="top-banner">
         <div class="title">
           <h4>Ashry & Aditya</h4>
           <p>ARE GETTING MARRIED!</p>
@@ -106,7 +141,7 @@
       </div>
 
       <!-- Detail Mempelai -->
-      <div class="row bg-white">
+      <div class="row bg-white" id="brides">
         <div class="box-lg center text-green">
           <div class="content-box">
             <p>
@@ -163,7 +198,7 @@
         <h2 class="title-countdown">Until We Get Married!</h2>
       </div>
 
-      <div class="row bg-white">
+      <div class="row bg-white" id="event">
         <div class="box-lg">
           <div class="event">
             <div class="col">
@@ -174,7 +209,9 @@
                 <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
                 Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
               </p>
-              <a href="http://" target="_blank">Petunjuk Arah</a>
+              <a href="https://goo.gl/maps/U4cKbLGUsLZdK4Yt9" target="_blank"
+                >Petunjuk Arah</a
+              >
             </div>
             <div class="col">&nbsp;</div>
             <div class="col">
@@ -185,14 +222,16 @@
                 <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
                 Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
               </p>
-              <a href="http://" target="_blank">Petunjuk Arah</a>
+              <a href="https://goo.gl/maps/U4cKbLGUsLZdK4Yt9" target="_blank"
+                >Petunjuk Arah</a
+              >
             </div>
           </div>
         </div>
       </div>
 
       <!-- Slider -->
-      <div class="photo owl-carousel owl-theme owl-loaded">
+      <div class="photo owl-carousel owl-theme owl-loaded" id="photo-gallery">
         <div class="owl-stage-outer">
           <div class="owl-stage">
             <div class="owl-item">
@@ -206,7 +245,7 @@
       </div>
 
       <!-- Slider Story-->
-      <div class="row bg-white">
+      <div class="row bg-white" id="story">
         <div class="box-lg center slider-story">
           <h2>Our Stories</h2>
           <div class="story owl-carousel owl-theme owl-loaded">
@@ -295,5 +334,24 @@
         </a>
       </div>
     </div>
+    <nav id="sticky-navbar">
+      <ul>
+        <li>
+          <a href="#top-banner"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="#brides"><i class="fas fa-ring"></i> Couple</a>
+        </li>
+        <li>
+          <a href="#event"><i class="fas fa-calendar-week"></i> Event</a>
+        </li>
+        <li>
+          <a href="#photo-gallery"><i class="fas fa-images"></i> Gallery</a>
+        </li>
+        <li>
+          <a href="#story"><i class="fas fa-comments"></i> Story</a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
