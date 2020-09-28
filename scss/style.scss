@@ -184,7 +184,6 @@ p {
 }
 
 .footer {
-  padding-block-end: 0;
   .text {
     font-family: "Montserrat", sans-serif;
     margin-block-end: 0.5em;
@@ -207,14 +206,14 @@ p {
   position: relative;
   .title {
     position: absolute;
-    width: 30%;
+    width: 40%;
     background-color: rgba($color-red, 0.7);
     border-radius: 8px;
     color: $color-white;
-    padding: 20px;
+    padding: 2.5%;
     text-align: center;
     left: 50%;
-    margin-left: -15%;
+    margin-left: -22.5%;
     margin-top: 35%;
     h4 {
       font-size: 3.5em;
@@ -300,7 +299,6 @@ p {
   background-image: url("../img/Cynthia-Sendy-7.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
-
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   z-index: 11;
@@ -311,8 +309,8 @@ p {
   top: 0px;
   display: flex;
   flex-direction: column;
-  padding-top: 40vh;
-  padding-bottom: 18vh;
+  padding-top: 28vh;
+  padding-bottom: 28vh;
 }
 
 #landing-title {
@@ -352,4 +350,66 @@ p {
 .move-gate {
   top: -170vh !important;
   transition: all 1s;
+}
+
+@media only screen and (max-width: 980px) {
+  #landing {
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #landing {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+  }
+
+  .banner {
+    .title {
+      width: 90%;
+      margin-left: -47.5%;
+      font-size: 0.8em;
+      margin-top: 100%;
+    }
+  }
+  .event {
+    display: block;
+    padding: 10px;
+  }
+  .col:nth-child(2) {
+    background: none;
+    padding: 20px 0;
+  }
+
+  #clockdiv {
+    display: inline-block;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  #clockdiv {
+    > div {
+      padding: 0px;
+    }
+  }
+
+  .title-countdown {
+    padding-top: 0px;
+  }
+
+  #form-wishes {
+    input[type="text"] {
+      width: 84%;
+    }
+
+    textarea {
+      width: 84%;
+      margin: 2%;
+    }
+
+    input[type="submit"] {
+      margin-right: 0;
+    }
+  }
 }
