@@ -1,5 +1,7 @@
+![banner](banner.PNG)<br>
 # Wedding Invitation Template
-This is a wedding invitation web template built using HTML5, SCSS and javascript.
+This is a wedding invitation web template built using HTML5, SCSS and javascript.<br>
+**Check out [live preview](https://devvma.github.io/WebTemplates-WeddingInvitation/)**
 
 ## Feature
 * Cover page
