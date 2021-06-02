@@ -1,7 +1,8 @@
-$color-base: #ffd3b6 !default;
+$color-base: #f6f6f6 !default;
 $color-white: #fcf8f3 !default;
 $color-green: #698474 !default;
-$color-red: #ffaaa5 !default;
+// $color-red: rgb(57,37,4) !default;
+$color-red: rgb(116,194,168) !default;
 
 body {
   font-family: "Lato", sans-serif;
@@ -138,7 +139,13 @@ p {
 }
 
 .countdown {
-  background: url("timer_bg1.png") repeat-y center center;
+  background-blend-mode: multiply;
+  background-image: url("timer_bg1.png");
+  background-repeat:  repeat-y;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(116,194,168,0.32);
+  color:$color-white;
 }
 
 .event {
@@ -198,9 +205,9 @@ p {
   width: 100%;
   height: 800px;
   background-blend-mode: multiply;
-  background-image: url("../img/Cynthia-Sendy-12.jpg");
+  background-image: url("../img/DHAN4863.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.32);
@@ -208,16 +215,16 @@ p {
   .title {
     position: absolute;
     width: 40%;
-    background-color: rgba($color-red, 0.7);
+    // background-color: rgba($color-red, 0.7);
     border-radius: 8px;
     color: $color-white;
     padding: 2.5%;
     text-align: center;
-    left: 50%;
+    left: 25%;
     margin-left: -22.5%;
-    margin-top: 35%;
+    margin-top: 17%;
     h4 {
-      font-size: 3.5em;
+      font-size: 5.5em;
       font-family: "Great Vibes", cursive;
       margin-block-start: 0;
       margin-block-end: 0;
@@ -407,11 +414,12 @@ p {
   }
 
   .banner {
+    background-position: 68% 50%;
     .title {
       width: 90%;
-      margin-left: -47.5%;
+      margin-left: -22%;
       font-size: 0.8em;
-      margin-top: 100%;
+      margin-top: 27%;
     }
   }
   .event {
@@ -427,6 +435,7 @@ p {
     display: inline-block;
     text-align: center;
     font-size: 2em;
+    
   }
 
   #clockdiv {
