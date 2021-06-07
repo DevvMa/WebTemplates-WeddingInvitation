@@ -73,9 +73,9 @@
         );
         initializeClock("clockdiv", deadline);
 
-        // $(".btn-invitation").click(function () {
-        //   $("#landing").addClass("move-gate");
-        // });
+        $(".btn-invitation").click(function () {
+          $("#landing").addClass("move-gate");
+        });
 
         window.onscroll = function () {
           scrollFunction();
@@ -112,14 +112,14 @@
     <title>SILVER</title>
   </head>
   <body>
-    <!-- <div id="landing">
+    <div id="landing">
       <div id="landing-title">
         <div class="main-title">You're Invited</div>
         <div class="sub-title">The Wedding Celebration of</div>
         <div class="bride-title">Ashry & Aditya</div>
       </div>
       <button class="btn-invitation">♥ Open Invitation</button>
-    </div> -->
+    </div>
     <div class="container">
       <!-- Slider -->
       <div class="banner" id="top-banner">
@@ -199,7 +199,31 @@
         <h2 class="title-countdown">Until We Get Married!</h2>
       </div>
 
-      <div class="row bg-white" id="event">
+      <div class="row bg-white">
+        <div class="box-lg">
+
+          <h4>Akad Nikah</h4>
+          <p class="time">10:00 - 10:30</p>
+          <p class="date">Sabtu, 20 Desember 2020</p>
+          <!-- <p class="address">
+            <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
+            Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
+          </p>
+          <a href="https://goo.gl/maps/U4cKbLGUsLZdK4Yt9" target="_blank">Petunjuk Arah</a> -->
+          <br>
+          <h4>Resepsi</h4>
+          <p class="time">11:00 - 16:00</p>
+          <p class="date">Sabtu, 20 Desember 2020</p>
+          <p class="address">
+            <strong> Masjid Nasional Al-Akbar Surabaya </strong><br />
+            Jl. Raya Wisma Pagesangan, Kota Surabaya, Jawa Timur
+          </p>
+          <a href="https://goo.gl/maps/U4cKbLGUsLZdK4Yt9" target="_blank"
+          >Petunjuk Arah</a>
+        </div>
+      </div>
+
+      <!-- <div class="row bg-white" id="event">
         <div class="box-lg">
           <div class="event">
             <div class="col">
@@ -229,7 +253,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Slider -->
       <div class="photo owl-carousel owl-theme owl-loaded" id="photo-gallery">
@@ -248,7 +272,13 @@
       <!-- Slider Story-->
       <div class="row bg-white" id="story">
         <div class="box-lg center slider-story">
+
           <h2>Our Stories</h2>
+          <iframe width="100%"
+          src="https://www.youtube.com/embed/jR2QBNcy43M" title="YouTube video player" 
+          frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- <div class="box-lg center slider-story">
           <div class="story owl-carousel owl-theme owl-loaded">
             <div class="owl-stage-outer">
               <div class="owl-stage">
@@ -300,7 +330,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="row bg-red center">

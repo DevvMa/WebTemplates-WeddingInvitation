@@ -46,6 +46,39 @@ p {
 .box-lg {
   width: 80%;
   margin: auto;
+  text-align: center;
+  h4 {
+    letter-spacing: 0.1em;
+    font-size: 3.6em;
+    margin: 0;
+    font-family: "Great Vibes", cursive;
+  }
+
+  .time {
+    font-size: 1.4em;
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+  }
+
+  .date {
+    font-size: 1.6em;
+    margin-block-start: 0;
+    margin-block-end: 2em;
+    color:$color-red
+  }
+
+  a {
+    font-size: 1.5em;
+    padding: 8px 32px;
+    background-color: $color-red;
+    color: $color-white;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+  .address{
+    font-size: 1.2em;
+  }
 }
 
 .center {
@@ -155,41 +188,41 @@ p {
   padding: 10px;
 }
 
-.col {
-  text-align: center;
-}
+// .col {
+//   text-align: center;
+// }
 
-.col {
-  h4 {
-    letter-spacing: 0.1em;
-    font-size: 1.6em;
-    margin: 0;
-    font-family: "Great Vibes", cursive;
-  }
+// .col {
+//   h4 {
+//     letter-spacing: 0.1em;
+//     font-size: 1.6em;
+//     margin: 0;
+//     font-family: "Great Vibes", cursive;
+//   }
 
-  .time {
-    font-size: 1.4em;
-    margin-block-start: 1em;
-    margin-block-end: 0em;
-  }
+//   .time {
+//     font-size: 1.4em;
+//     margin-block-start: 1em;
+//     margin-block-end: 0em;
+//   }
 
-  .date {
-    font-size: 1em;
-    margin-block-start: 0;
-    margin-block-end: 2em;
-  }
+//   .date {
+//     font-size: 1em;
+//     margin-block-start: 0;
+//     margin-block-end: 2em;
+//   }
 
-  a {
-    padding: 5px 30px;
-    background-color: $color-red;
-    color: $color-white;
-    text-decoration: none;
-  }
-}
+//   a {
+//     padding: 5px 30px;
+//     background-color: $color-red;
+//     color: $color-white;
+//     text-decoration: none;
+//   }
+// }
 
-.col:nth-child(2) {
-  background: url("flower.svg") no-repeat center center;
-}
+// .col:nth-child(2) {
+//   background: url("flower.svg") no-repeat center center;
+// }
 
 .footer {
   .text {
@@ -304,27 +337,28 @@ p {
 }
 
 #landing {
-  background-image: url("../img/Cynthia-Sendy-7.jpg");
-  background-position: center bottom;
+  background-image: url("../img/DHAN4267.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: multiply;
   z-index: 11;
   position: relative;
-  height: 100vh;
+  height: 800px;
   position: fixed;
   width: 100%;
   top: 0px;
   display: flex;
   flex-direction: column;
-  padding-top: 28vh;
-  padding-bottom: 28vh;
+  // padding-top: 28vh;
+  // padding-bottom: 28vh;
 }
 
 #landing-title {
   color: $color-white;
   text-align: center;
-
+  margin-top: 25%;
   .main-title {
     font-size: 1.5em;
     padding-bottom: 0.6em;
@@ -409,8 +443,8 @@ p {
 
 @media only screen and (max-width: 767px) {
   #landing {
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    background-size: cover;
+    background-position: 37% 50%;
   }
 
   .banner {
